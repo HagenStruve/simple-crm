@@ -1,0 +1,56 @@
+.fab-button {
+    position: absolute;
+    right: 56px;
+    bottom: 56px;
+}
+
+mat-card {
+    padding: 0;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        border-bottom: 1px solid rgb(0, 0, 0, 0.4);
+
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(0, 0, 0, 0.4);
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        &:first-child {
+            cursor: unset;
+            background-color: unset;
+        }
+
+        td {
+            height: 50px;
+
+            &:first-child {
+                padding-left: 16px;
+            }
+        }
+
+        th {
+            &:first-child {
+                padding-left: 16px;
+                padding-top: 16px;
+            }
+        }
+    }
+
+    td {
+        height: 50px;
+    }
+
+    th {
+        font-weight: 500;
+        text-align: start;
+    }
+}
